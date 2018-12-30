@@ -11,6 +11,7 @@ import {Provider} from 'react-redux';
 import Layout from 'containers/layout';
 import Phones from 'containers/phones';
 import Phone from 'containers/phone';
+import Basket from 'containers/basket';
 
 // Can import like this b/c we use it in node_modules folder in src.
 import reducers from 'reducers';
@@ -32,6 +33,7 @@ ReactDOM.render(
                 <Router path="/categories/:id" component={Phones} />
             </Route>
             <Route path="/phones/:id" component={Phone} />
+            <Router path="/basket" component={Basket} />
         </Router>
     </Provider>,
     document.getElementById('root')
